@@ -52,9 +52,22 @@ const ContactCard = (props) => {
             delete
           </i>
         </td>
+        <td>
+        <Link
+            to={{
+              pathname: `edit/${props.contact.id}`,
+              state: { detail: props.contact },
+            }}
+            className='red-text'
+          >
+          <i className='material-icons red-text' style={{ cursor: "pointer" }}>
+            edit
+          </i>
+        </Link>
+        </td>
       </tr>
     </tbody>
   );
 };
-
+ 
 export default ContactCard;
