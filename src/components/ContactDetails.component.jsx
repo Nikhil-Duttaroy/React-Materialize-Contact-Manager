@@ -10,7 +10,12 @@ const ContactDetails = (props) => {
         <div className='col s6 offset-s3'>
           <div
             className='card hoverable horizontal'
-            style={{ backgroundColor: "#ee6e73", borderRadius: "25px" }}
+            style={{
+              padding: "1.5rem",
+              background: "rgb(212,173,173)",
+              background:
+                "linear-gradient(0deg, rgba(212,173,173,1) 0%, rgba(238,110,115,1) 100%)",
+            }}
           >
             <div className='card-image'>
               <img

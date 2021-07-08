@@ -22,14 +22,24 @@ const AddContact = (props) => {
     props.history.push("/")
   };
   return (
-    <div className='row'>
-      <div className='card col s6 offset-s3' style={{ padding: "1.5rem" }}>
+    <div className='row' style={{ marginTop: "2rem" }}>
+      <div
+        className='card col s6 offset-s3'
+        style={{ padding: "1.5rem", background: "rgb(212,173,173)",
+background: "linear-gradient(0deg, rgba(212,173,173,1) 0%, rgba(238,110,115,1) 100%)"}}
+      >
         <form action='' className='center-align' onSubmit={add}>
           <h5>Add Contact</h5>
           <div className='row'>
-            <div className='input-field col s12 '>
-              <label htmlFor='Name'>Name</label>
+            <div
+              className='input-field col s12'
+              style={{ color: "white", fontWeight: "400" }}
+            >
+              <label htmlFor='Name' style={{ color: "black" }}>
+                Name
+              </label>
               <input
+                style={{ color: "black", fontWeight: "400" }}
                 type='text'
                 name='name'
                 id='name'
@@ -38,8 +48,14 @@ const AddContact = (props) => {
               />
             </div>
             <div className='input-field col s12'>
-              <label htmlFor='email'>Email</label>
+              <label
+                htmlFor='email'
+                style={{ color: "black", fontWeight: "400" }}
+              >
+                Email
+              </label>
               <input
+                style={{ color: "black", fontWeight: "400" }}
                 type='email'
                 name='email'
                 id='email'
@@ -50,8 +66,14 @@ const AddContact = (props) => {
               />
             </div>
             <div className='input-field col s12'>
-              <label htmlFor='contact'>Contact No</label>
+              <label
+                htmlFor='contact'
+                style={{ color: "black", fontWeight: "400" }}
+              >
+                Contact No
+              </label>
               <input
+                style={{ color: "black", fontWeight: "400" }}
                 type='tel'
                 pattern='[0-9]{10}'
                 name='contact'

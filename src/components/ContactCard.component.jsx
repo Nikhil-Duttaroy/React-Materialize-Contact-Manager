@@ -11,8 +11,12 @@ const ContactCard = (props) => {
               pathname: `contact/${props.contact.id}`,
               state: { detail: props.contact },
             }}
-            style={{ display: "flex", justifyContent: "center" }}
-            className='red-text'
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              color: "#ee6e73",
+              fontWeight: "500",
+            }}
           >
             <i className='material-icons' style={{ marginRight: "5px" }}>
               person
@@ -30,7 +34,15 @@ const ContactCard = (props) => {
             }}
             className='red-text'
           >
-            <span style={{ fontSize: "1.2rem" }}>{props.contact.email}</span>
+            <span
+              style={{
+                fontSize: "1.2rem",
+                color: "#ee6e73",
+                fontWeight: "500",
+              }}
+            >
+              {props.contact.email}
+            </span>
           </Link>
         </td>
 
@@ -43,17 +55,26 @@ const ContactCard = (props) => {
             }}
             className='red-text'
           >
-            <span style={{ fontSize: "1.2rem" }}>{props.contact.contact}</span>
+            <span
+              style={{
+                fontSize: "1.2rem",
+                color: "#ee6e73",
+                fontWeight: "500",
+              }}
+            >
+              {props.contact.contact}
+            </span>
           </Link>
         </td>
 
         <td onClick={() => props.clickHandler(props.contact.id)}>
-          <i className='material-icons red-text' style={{ cursor: "pointer" }}>
+          <i
+            className='material-icons'
+            style={{ cursor: "pointer", color: "#ee6e73", fontWeight: "500" }}
+          >
             delete
           </i>
         </td>
-
-        
       </tr>
     </tbody>
   );
