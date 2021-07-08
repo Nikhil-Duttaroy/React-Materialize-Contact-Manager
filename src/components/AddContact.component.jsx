@@ -53,6 +53,7 @@ const AddContact = (props) => {
               <label htmlFor='contact'>Contact No</label>
               <input
                 type='tel'
+                pattern='[0-9]{10}'
                 name='contact'
                 id='contact'
                 value={contact}

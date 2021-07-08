@@ -58,7 +58,6 @@ const ContactList = (props) => {
             <th className='white-text'>Email</th>
             <th className='white-text'>Contact</th>
             <th className='white-text'>Delete</th>
-            <th className='white-text'>Edit</th>
           </tr>
         </thead>
         {renderContactList.length > 0 ? renderContactList : (<h4 style={{color:"red" , textAlign:"center"}}> "No Contacts Available" </h4>)}
